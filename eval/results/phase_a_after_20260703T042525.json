@@ -1,0 +1,13 @@
+{
+  "label": "phase_a_after",
+  "n": 300,
+  "precision@5": 0.14,
+  "precision@10": 0.0797,
+  "recall@5": 0.6486,
+  "recall@10": 0.7257,
+  "mrr": 0.5502,
+  "ndcg@5": 0.5612,
+  "ndcg@10": 0.587,
+  "answer_similarity": 0.0,
+  "answered": 0
+}

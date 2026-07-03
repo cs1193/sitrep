@@ -1,0 +1,59 @@
+{
+  "name": "sitrep",
+  "version": "0.1.0",
+  "description": "Self-Improving Token-Reduced Embeddable Pipeline — a local, privacy-first context engineering system (multi-agent knowledge graph, RL compression, KV caching, hybrid retrieval, temporal memory).",
+  "author": "SITREP Contributors",
+  "license": "MIT",
+  "homepage": "https://example.invalid/sitrep",
+  "entry": "plugin.py",
+  "python": ">=3.10,<3.13",
+  "package": "src",
+  "summary": "Ingest documents into a local knowledge graph, query with adaptive compression, give feedback to learn fusion weights, and train a PPO compression agent — all fully local.",
+  "capabilities": [
+    "ingest",
+    "query",
+    "train",
+    "stats",
+    "lineage",
+    "snapshot"
+  ],
+  "tools": [
+    {
+      "name": "sitrep_query",
+      "description": "Answer a question over the local SITREP knowledge base with confidence + token-reduction telemetry.",
+      "entrypoint": "plugin.query",
+      "arguments": {"text": "string", "top_k": "int?"}
+    },
+    {
+      "name": "sitrep_ingest",
+      "description": "Ingest raw text into the knowledge graph (chunking, fact/schema extraction, conflict resolution).",
+      "entrypoint": "plugin.ingest",
+      "arguments": {"text": "string", "document_id": "string?"}
+    },
+    {
+      "name": "sitrep_train",
+      "description": "Train the PPO compression agent on accumulated feedback.",
+      "entrypoint": "plugin.train",
+      "arguments": {"timesteps": "int?"}
+    },
+    {
+      "name": "sitrep_stats",
+      "description": "Return aggregate statistics (schemas, facts, passages, fusion weights, token savings).",
+      "entrypoint": "plugin.stats",
+      "arguments": {}
+    },
+    {
+      "name": "sitrep_lineage",
+      "description": "Trace a decision by id, or list recent decisions.",
+      "entrypoint": "plugin.lineage",
+      "arguments": {"decision_id": "string?", "recent": "int?"}
+    },
+    {
+      "name": "sitrep_snapshot",
+      "description": "Snapshot the entire .sitrep/ data directory.",
+      "entrypoint": "plugin.snapshot",
+      "arguments": {"label": "string?"}
+    }
+  ],
+  "setup": "uv sync --extra rag --extra graph --extra llm --extra web"
+}

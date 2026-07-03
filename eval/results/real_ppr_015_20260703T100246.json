@@ -1,0 +1,13 @@
+{
+  "label": "real_ppr_015",
+  "n": 100,
+  "precision@5": 0.18,
+  "precision@10": 0.101,
+  "recall@5": 0.7985,
+  "recall@10": 0.888,
+  "mrr": 0.7344,
+  "ndcg@5": 0.7372,
+  "ndcg@10": 0.768,
+  "answer_similarity": 0.0,
+  "answered": 0
+}

@@ -1,0 +1,13 @@
+{
+  "label": "baseline_before",
+  "n": 300,
+  "precision@5": 0.184,
+  "precision@10": 0.0983,
+  "recall@5": 0.831,
+  "recall@10": 0.877,
+  "mrr": 0.7895,
+  "ndcg@5": 0.7875,
+  "ndcg@10": 0.804,
+  "answer_similarity": 0.0,
+  "answered": 0
+}

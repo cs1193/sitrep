@@ -1,0 +1,13 @@
+{
+  "label": "phaseA_tuned",
+  "n": 300,
+  "precision@5": 0.15,
+  "precision@10": 0.08,
+  "recall@5": 0.6917,
+  "recall@10": 0.7332,
+  "mrr": 0.5996,
+  "ndcg@5": 0.6151,
+  "ndcg@10": 0.6294,
+  "answer_similarity": 0.0,
+  "answered": 0
+}

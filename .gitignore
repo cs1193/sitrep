@@ -1,0 +1,43 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.so
+
+# ---- Virtualenvs ----
+.venv/
+venv/
+env/
+
+# uv lock is intentionally NOT ignored for reproducible installs.
+
+# ---- SITREP runtime data (generated per-workspace) ----
+.sitrep/
+
+# ---- Model / embedding caches ----
+.cache/
+*.bin
+*.safetensors
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- Tooling ----
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# BEIR/SciFact raw downloads (re-fetchable)
+eval/raw/
+
+# BEIR/SciFact corpus (regenerate: uv run --with duckdb python scripts/fetch_eval_data.py)
+eval/scifact_corpus.jsonl
+eval/scifact_corpus_small.jsonl

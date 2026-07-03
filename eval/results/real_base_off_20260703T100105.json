@@ -1,0 +1,13 @@
+{
+  "label": "real_base_off",
+  "n": 100,
+  "precision@5": 0.178,
+  "precision@10": 0.1,
+  "recall@5": 0.7885,
+  "recall@10": 0.878,
+  "mrr": 0.7473,
+  "ndcg@5": 0.7432,
+  "ndcg@10": 0.7741,
+  "answer_similarity": 0.0,
+  "answered": 0
+}

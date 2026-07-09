@@ -22,12 +22,15 @@ Each ADR follows the format:
 | [0002](./0002-clean-architecture-layer-boundaries.md) | Clean Architecture Layer Boundaries | Accepted | 2026-07-09 | 5-layer clean architecture with unidirectional dependencies |
 | [0003](./0003-lazy-imports-optional-dependencies.md) | Lazy Imports for Optional Dependencies | Accepted | 2026-07-09 | Optional extras ([rag], [graph], [llm], [rl], [web]) with graceful degradation |
 | [0004](./0004-multi-database-approach.md) | Multi-Database Approach | Accepted | 2026-07-09 | Polyglot persistence: SQLite + KuzuDB + ChromaDB + DuckDB optimized by use case |
+| [0005](./0005-hybrid-retrieval-fusion-weights.md) | Hybrid Retrieval Fusion Weight Learning | Accepted | 2026-07-09 | Learn w_dense/w_sparse from user feedback, adapt to corpus characteristics |
+| [0006](./0006-rl-compression-training-environment.md) | RL Compression Agent Training Environment | Accepted | 2026-07-09 | Self-supervised PPO training with 11-dim state space, discrete action space |
+| [0007](./0007-memory-consolidation-forgetting-policy.md) | Memory Consolidation and Forgetting Policy | Accepted | 2026-07-09 | Multi-signal importance scoring with soft-delete archival, cold storage tiering |
 
 ## Future ADRs (Planned)
 
-- **ADR-0005:** Hybrid retrieval fusion weight learning strategy
-- **ADR-0006:** RL compression agent training environment design
-- **ADR-0007:** Memory consolidation and forgetting policy
+- **ADR-0008:** Query intent classification and routing strategy
+- **ADR-0009:** Conflict resolution and fact merging heuristics
+- **ADR-0010:** Lineage tracking and decision reversibility
 - **ADR-0005:** Hybrid retrieval fusion weight learning strategy
 - **ADR-0006:** RL compression agent training environment design
 
@@ -131,7 +134,7 @@ When reviewing an ADR, check:
 
 ---
 
-**Total ADRs:** 4 (Accepted)  
+**Total ADRs:** 7 (Accepted)  
 **Deprecated:** 0  
-**Next ADR Number:** 0005  
+**Next ADR Number:** 0008  
 **Last Updated:** 2026-07-09

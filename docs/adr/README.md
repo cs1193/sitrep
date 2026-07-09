@@ -19,12 +19,15 @@ Each ADR follows the format:
 | # | Title | Status | Date | Summary |
 |---|-------|--------|------|---------|
 | [0001](./0001-multi-agent-architecture-documentation.md) | Multi-Agent Swarm for Architecture Documentation | Accepted | 2026-07-09 | Generate comprehensive architecture docs via 7-agent parallel swarm |
+| [0002](./0002-clean-architecture-layer-boundaries.md) | Clean Architecture Layer Boundaries | Accepted | 2026-07-09 | 5-layer clean architecture with unidirectional dependencies |
+| [0003](./0003-lazy-imports-optional-dependencies.md) | Lazy Imports for Optional Dependencies | Accepted | 2026-07-09 | Optional extras ([rag], [graph], [llm], [rl], [web]) with graceful degradation |
+| [0004](./0004-multi-database-approach.md) | Multi-Database Approach | Accepted | 2026-07-09 | Polyglot persistence: SQLite + KuzuDB + ChromaDB + DuckDB optimized by use case |
 
 ## Future ADRs (Planned)
 
-- **ADR-0002:** Clean Architecture layer boundaries and module structure
-- **ADR-0003:** Lazy import strategy for optional dependencies
-- **ADR-0004:** Multi-database approach (SQLite + KuzuDB + ChromaDB)
+- **ADR-0005:** Hybrid retrieval fusion weight learning strategy
+- **ADR-0006:** RL compression agent training environment design
+- **ADR-0007:** Memory consolidation and forgetting policy
 - **ADR-0005:** Hybrid retrieval fusion weight learning strategy
 - **ADR-0006:** RL compression agent training environment design
 
@@ -128,7 +131,7 @@ When reviewing an ADR, check:
 
 ---
 
-**Total ADRs:** 1 (Accepted)  
+**Total ADRs:** 4 (Accepted)  
 **Deprecated:** 0  
-**Next ADR Number:** 0002  
+**Next ADR Number:** 0005  
 **Last Updated:** 2026-07-09

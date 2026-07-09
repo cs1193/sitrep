@@ -7,6 +7,10 @@ Welcome to the SITREP documentation. This directory contains usage guides, archi
 ### Quick Start
 - **[USAGE.md](./USAGE.md)** — User guide covering CLI, Web UI, and Python API usage
 
+### Architecture Decisions
+- **[adr/README.md](./adr/README.md)** — Architecture Decision Records
+  - [ADR-0001: Multi-Agent Swarm for Architecture Documentation](./adr/0001-multi-agent-architecture-documentation.md)
+
 ### Architecture & Analysis (Generated via Multi-Agent Swarm)
 - **[ANALYSIS_INDEX.md](./ANALYSIS_INDEX.md)** — Quick reference guide and navigation index
 - **[SITREP_CODEBASE_ANALYSIS.md](./SITREP_CODEBASE_ANALYSIS.md)** — Comprehensive 13K+ word deep-dive into architecture, layers, APIs, data flows, and patterns

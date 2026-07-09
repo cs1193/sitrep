@@ -25,12 +25,15 @@ Each ADR follows the format:
 | [0005](./0005-hybrid-retrieval-fusion-weights.md) | Hybrid Retrieval Fusion Weight Learning | Accepted | 2026-07-09 | Learn w_dense/w_sparse from user feedback, adapt to corpus characteristics |
 | [0006](./0006-rl-compression-training-environment.md) | RL Compression Agent Training Environment | Accepted | 2026-07-09 | Self-supervised PPO training with 11-dim state space, discrete action space |
 | [0007](./0007-memory-consolidation-forgetting-policy.md) | Memory Consolidation and Forgetting Policy | Accepted | 2026-07-09 | Multi-signal importance scoring with soft-delete archival, cold storage tiering |
+| [0008](./0008-query-intent-classification-routing.md) | Query Intent Classification and Routing | Accepted | 2026-07-09 | Classify query intent (simple/temporal/causal/synthesis), route to specialized retrievers |
+| [0009](./0009-conflict-resolution-fact-merging.md) | Conflict Resolution and Fact Merging | Accepted | 2026-07-09 | Detect contradictions, auto-resolve high-confidence, manual review queue for edge cases |
+| [0010](./0010-lineage-tracking-decision-reversibility.md) | Lineage Tracking and Decision Reversibility | Accepted | 2026-07-09 | Decision graph (KuzuDB) tracks all transformations, enables audit trail + reversibility |
 
 ## Future ADRs (Planned)
 
-- **ADR-0008:** Query intent classification and routing strategy
-- **ADR-0009:** Conflict resolution and fact merging heuristics
-- **ADR-0010:** Lineage tracking and decision reversibility
+- **ADR-0011:** Temporal query optimization and index strategies
+- **ADR-0012:** Causal reasoning and do-calculus integration
+- **ADR-0013:** Multimodal reasoning (text + images + audio)
 - **ADR-0005:** Hybrid retrieval fusion weight learning strategy
 - **ADR-0006:** RL compression agent training environment design
 
@@ -134,7 +137,7 @@ When reviewing an ADR, check:
 
 ---
 
-**Total ADRs:** 7 (Accepted)  
+**Total ADRs:** 10 (Accepted)  
 **Deprecated:** 0  
-**Next ADR Number:** 0008  
+**Next ADR Number:** 0011  
 **Last Updated:** 2026-07-09
